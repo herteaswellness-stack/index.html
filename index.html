@@ -145,14 +145,14 @@ select.field-input{cursor:pointer}
 .payment-opt input[type="checkbox"]{width:18px;height:18px;flex-shrink:0;margin-top:1px;accent-color:#2c5282;cursor:pointer}
 .payment-opt .opt-text{font-size:12.5px;line-height:1.5;color:#2d3748;pointer-events:none;user-select:none}
 .amount-row{display:flex;justify-content:flex-end;margin-bottom:22px}
-.amount-box{background:#1e3a5f;color:#fff;border-radius:8px;padding:16px 24px;min-width:220px}
-.amount-box .a-lbl{font-size:10.5px;text-transform:uppercase;letter-spacing:.9px;opacity:.75;margin-bottom:5px}
-.amount-box .a-date{font-size:12px;opacity:.85;margin-bottom:10px}
-.amount-box .a-divider{border:none;border-top:1px solid rgba(255,255,255,.2);margin-bottom:10px}
-.amount-box .a-total-lbl{font-size:12px;opacity:.8;margin-bottom:3px}
-.amount-box .a-total-val{font-size:23px;font-weight:700}
-.amount-box [contenteditable]{border-bottom-color:rgba(255,255,255,.4);color:#fff}
-.amount-box [contenteditable]:hover,.amount-box [contenteditable]:focus{background:rgba(255,255,255,.15);border-bottom-color:#fff}
+.amount-box{background:#f7fafc;color:#1a202c;border:1px solid #e2e8f0;border-radius:8px;padding:16px 24px;min-width:220px}
+.amount-box .a-lbl{font-size:10.5px;text-transform:uppercase;letter-spacing:.9px;color:#718096;margin-bottom:5px}
+.amount-box .a-date{font-size:12px;color:#4a5568;margin-bottom:10px}
+.amount-box .a-divider{border:none;border-top:1px solid #e2e8f0;margin-bottom:10px}
+.amount-box .a-total-lbl{font-size:12px;color:#718096;margin-bottom:3px}
+.amount-box .a-total-val{font-size:23px;font-weight:700;color:#1e3a5f}
+#invoice .amount-box [contenteditable]{border-bottom-color:#a0aec0;color:#1a202c !important}
+#invoice .amount-box [contenteditable]:hover,#invoice .amount-box [contenteditable]:focus{background:#ebf4ff;border-bottom-color:#2c5282}
 .notes-area{font-size:11.5px;color:#718096;line-height:1.6;background:#f7fafc;border-radius:6px;padding:10px 14px;margin-bottom:24px;min-height:34px}
 .notes-area[contenteditable]:empty::before{content:'Notes…';color:#a0aec0}
 .sig-row{display:flex;justify-content:space-between;align-items:flex-end;padding-top:16px;border-top:1px solid #e2e8f0}
@@ -202,10 +202,12 @@ select.field-input{cursor:pointer}
   .sig-name{font-size:20px !important}
   .inv-footer-bar{height:5px !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
   #invoice [contenteditable="true"]{border-bottom:1px solid #ccc;background:transparent !important;color:#000 !important}
-  #invoice .amount-box{background:#fff !important;border:2px solid #1e3a5f !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-  #invoice .amount-box .a-lbl,#invoice .amount-box .a-date,#invoice .amount-box .a-total-lbl,#invoice .amount-box .a-total-val{color:#1e3a5f !important}
-  #invoice .amount-box .a-divider{border-top:1px solid #1e3a5f !important}
-  #invoice .amount-box [contenteditable="true"]{border-bottom:1px solid #1e3a5f !important;color:#1e3a5f !important;background:transparent !important}
+  #invoice .amount-box{background:#f7fafc !important;border:1px solid #e2e8f0 !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  #invoice .amount-box .a-lbl,#invoice .amount-box .a-total-lbl{color:#718096 !important}
+  #invoice .amount-box .a-date{color:#4a5568 !important}
+  #invoice .amount-box .a-total-val{color:#1e3a5f !important}
+  #invoice .amount-box .a-divider{border-top:1px solid #e2e8f0 !important}
+  #invoice .amount-box [contenteditable="true"]{border-bottom:1px solid #a0aec0 !important;color:#1a202c !important;background:transparent !important}
 }
 </style>
 </head>
